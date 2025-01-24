@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naticalexims</title>
+    <link rel="Stylesheet" href="static/styles.css">
+    <script>
+        let currentSlide = 0;
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.slide');
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) {
+                    slide.classList.add('active');
+                }
+            });
+        }
+        function nextSlide() {
+            const slides = document.querySelectorAll('.slide');
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+        setInterval(nextSlide, 2000);
+    </script>
+</head>
+<body>
+    <header>
+        <img src="static/logo.jpg" alt="Naticalexims Logo">
+        <h1 style="text-align:center">Naticalexims</h1>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="/contact">Contact</a>
+    </nav>
+    <section>
+        <h2>Welcome to Naticalexims</h2>
+        <p class="intro">We are a premier import and export company, dedicated to connecting businesses with global markets. Our expertise lies in delivering seamless trade solutions tailored to your unique needs. Discover how we can empower your business to reach new heights.</p>
+    </section>
+    <div class="slideshow-container">
+        <div class="slide active">
+            <a href="fruits.html">
+            <img src="static/bananas.jpg" alt="Bananas">
+            <div class="caption">Fresh Bananas for export.</div>
+            </a>
+        </div>
+        <div class="slide">
+            <a href="vegetables.html">
+            <img src="static/vegetables.jpg" alt="Vegetables">
+            <div class="caption">Organic Vegetables for a healthy life.</div>
+            </a>
+        </div>
+        <div class="slide">
+            <a href="products.html">
+            <img src="static/goats.jpg" alt="Goats">
+            <div class="caption">Premium Meat and Fish products.</div>
+            </a>
+        </div>
+        <div class="slide">
+            <a href="products.html">
+                <img src="static/Cocks+Hens.jpg" alt="Cocks">
+            <div class="caption">Premium Meat and Fish products.</div>
+            </a>
+        </div>
+        <div class="slide">
+            <a href="products.html">
+            <img src="static/fish.jpg" alt="Meat and Fish">
+            <div class="caption">Premium Meat and Fish products.</div>
+            </a>
+        </div>
+        <div class="slide">
+            <a href="fruits.html">
+                <img src="static/mangoes.jpg" alt="Mangoes">
+            <div class="caption">Sweet and juicy Mangoes.</div>
+            </a>
+        </div>
+        <div class="slide">
+            <a href="products.html">
+                <img src="static/dry chillies.jpg" alt="Dry Chillies">
+            <div class="caption">High-quality Dry Chillies for spice lovers.</div>
+            </a>
+        </div>
+        <div class="slide">
+            <a href="products.html">
+                <img src="static/Rice.jpg" alt="Rice">
+            <div class="caption">High-quality Rice.</div>
+            </a>
+        </div>
+    </div>
+    <section>
+        <h2>Our Key Services</h2>
+        <div class="services">
+            <div class="service">
+                <img src="static/import.jpg" alt="Import Services">
+                <h3>Import Services</h3>
+                <p>We source high-quality products worldwide, tailored to your requirements and delivered with utmost reliability.</p>
+            </div>
+            <div class="service">
+                <img src="static/export.jpg" alt="Export Services">
+                <h3>Export Services</h3>
+                <p>Expand your business with our dependable export solutions that connect you to international markets effortlessly.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Our Products</h2>
+        <div class="products-container">
+            <div class="product">
+                <img src="static/fruits.jpg" alt="Fruits">
+                <h3>Fresh Fruits</h3>
+                <div class="product-details">
+                    <p>Premium quality fruits sourced globally.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="static/vegetables.jpg" alt="Vegetables">
+                <h3>Organic Vegetables</h3>
+                <div class="product-details">
+                    <p>Fresh and healthy organic vegetables.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="static/goats.jpg" alt="Meat">
+                <h3>Meat Products</h3>
+                <div class="product-details">
+                    <p>High-quality meat for all your needs.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="static/dry chillies.jpg" alt="Spices">
+                <h3>Exotic Spices</h3>
+                <div class="product-details">
+                    <p>Aromatic spices to enhance your dishes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Top Exports</h2>
+        <div class="products-container">
+            <div class="product">
+                <img src="static/bananas.jpg" alt="Bananas">
+                <h3>Bananas</h3>
+                <div class="product-details">
+                    <p>Fresh and high-quality bananas for export.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="static/mangoes.jpg" alt="Mangoes">
+                <h3>Mangoes</h3>
+                <div class="product-details">
+                    <p>Sweet and juicy mangoes sourced from the best farms.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="static/dry chillies.jpg" alt="Dry Chillies">
+                <h3>Dry Chillies</h3>
+                <div class="product-details">
+                    <p>Spicy and aromatic dry chillies for global markets.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="static/Rice.jpg" alt="Rice">
+                <h3>Rice</h3>
+                <div class="product-details">
+                    <p>Premium quality rice, perfect for all cuisines.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="static/tomatoes.jpg" alt="Tomatoes">
+                <h3>Tomatoes</h3>
+                <div class="product-details">
+                    <p>Fresh and ripe tomatoes for export.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Naticalexims. All rights reserved.</p>
+    </footer>
+</body>
+</html>
