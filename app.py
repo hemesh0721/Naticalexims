@@ -21,22 +21,26 @@ def init_db():
 
 # Route for the homepage
 @app.route('/')
+@app.route('/home')
 def home():
     return render_template('home.html')
 
-@app.route('/products')
+
+@app.route("/products")
 def products():
-    return render_template('products.html')
+    return render_template("products.html")
 
-@app.route('/vegetables')
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
+@app.route("/vegetables")
 def vegetables():
-    return render_template('vegetables.html')
+    return render_template("vegetables.html")
 
-@app.route('/fruits')
+@app.route("/fruits")
 def fruits():
-    return render_template('fruits.html')
-
-
+    return render_template("fruits.html")
 
 @app.route('/contact')
 def contact():
