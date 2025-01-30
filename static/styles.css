@@ -1,13 +1,29 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    
+
     margin: 0;
     padding: 0;
     color: #2c3e50;
     background-color: #f4f8fb;
     background-image: url('https://www.transparenttextures.com/patterns/white-diamond.png');
 }
+body::-webkit-scrollbar {
+    display: none;
+}
+@keyframes flow {
+    0% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+body {
+    animation: flow 15s ease infinite;
+}
 header {
-    background-image: linear-gradient(to right, #2a5298, #1e3c72);
+    background-color: rgb(209, 209, 209);
     color: white;
     padding: 1rem 0;
     display: flex;
@@ -20,6 +36,9 @@ header img {
     margin-left: 20px;
 }
 header h1 {
+    color: #1E3C72; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     margin: 0;
     flex-grow: 1;
@@ -28,9 +47,11 @@ header h1 {
 nav {
     display: flex;
     justify-content: center;
+    
     background-color: #1e3c72;
     padding: 1rem 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
 }
 nav a {
     color: white;
@@ -44,10 +65,12 @@ nav a:hover {
     color: #d1e1f4;
 }
 section {
-    padding: 3rem 1rem;
+    padding: 1rem 1rem;
     text-align: center;
 }
 section h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
     color: #2a5298;
 }
 .intro {
@@ -128,14 +151,7 @@ section h2 {
     border-radius: 8px;
     margin-bottom: 1rem;
 }
-footer {
-    background-color: #1e3c72;
-    color: white;
-    text-align: center;
-    padding: 1.5rem 0;
-    margin-top: 3rem;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-}
+
 .products-container {
     display: flex;
     flex-wrap: wrap;
@@ -144,6 +160,7 @@ footer {
     padding: 2rem;
 }
 .product {
+    font-family: 'Open Sans', sans-serif;
     border: 1px solid #bdc3c7;
     border-radius: 8px;
     padding: 1.5rem;
@@ -171,6 +188,7 @@ footer {
     color: #2a5298;
 }
 .product-details {
+    font-family: 'Open Sans', sans-serif;
     text-align: left;
     margin-top: 1rem;
     font-size: 0.95rem;
@@ -179,13 +197,254 @@ footer {
     margin: 0.5rem 0;
 }
 
-
-
 footer {
-    background-color: #1e3c72;
-    color: white;
+    background-color: #1A2B5D;
+    color: #ffffff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-left {
+    flex: 1;
+    min-width: 250px;
     text-align: center;
-    padding: 1.5rem 0;
-    margin-top: 3rem;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-left img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-family: 'Open Sans', sans-serif;
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.social-icons img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+
+.icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+
+.footer-links {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.footer-links h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #F8B400;
+}
+
+.footer-links ul {
+    
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    font-family: 'Open Sans', sans-serif;
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links ul li a:hover {
+    color: #F8B400; 
+}
+
+.footer-right {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.footer-right h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #F8B400; 
+}
+
+.footer-right p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+
+.footer-bottom {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    border-top: 1px solid #ffffff;
+    padding-top: 10px;
+    color: #ccc;
+}
+
+.footer-bottom a {
+    color: #F8B400;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.top-image-container {
+    position: relative;
+    width: 100%;
+    max-height: 576px;
+}
+
+.top-image-container img {
+    width: 100%;
+    height: auto;
+    max-height: 576px;
+    object-fit: cover;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideUps {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.top-image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px; 
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    animation: slideUp 2s ease-out forwards;
+}
+.top-image-texts {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    font-size: 30px; 
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    animation: slideUps 1s ease-out forwards;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 0 20px; 
+}
+
+.section-text {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    padding: 0 20px;
+    margin-left: 60px;
+    line-height: 1.8; 
+}
+
+.second-section {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 20px; 
+    
+}
+
+.second-section p {
+    flex: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 150px;
+    margin-left: 60px;
+    line-height: 1.6;
+}
+
+.second-section img {
+    width: 450px;
+    height:250px;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-top: 25px;
 }

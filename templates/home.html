@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naticalexims</title>
     <link rel="Stylesheet" href="static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .marquee-container {
+        width: 100%;
+        overflow: hidden;
+        
+    }
+
+    .marquee {
+        display: flex;
+        animation: marquee-scroll 10s linear infinite;
+    }
+
+    .marquee img {
+        height: 150px;
+        margin-right: 20px;
+        
+    }
+
+    @keyframes marquee-scroll {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+    </style>
     <script>
         let currentSlide = 0;
         function showSlide(index) {
@@ -27,7 +55,7 @@
 <body>
     <header>
         <img src="static/logo.jpg" alt="Naticalexims Logo">
-        <h1 style="text-align:center">Naticalexims</h1>
+        <h1 style="text-align:center">NATICALEXIMS</h1>
     </header>
     <nav>
         <a href="/home">Home</a>
@@ -43,53 +71,81 @@
         <div class="slide active">
             <a href="/fruits">
             <img src="static/bananas.jpg" alt="Bananas">
-            <div class="caption">Fresh Bananas for export.</div>
+            <div class="top-image-texts">
+            <p><u>FRESH BANANAS FOR EXPORT</u></p>
+        </div>
             </a>
         </div>
         <div class="slide">
             <a href="/vegetables">
             <img src="static/vegetables.jpg" alt="Vegetables">
-            <div class="caption">Organic Vegetables for a healthy life.</div>
+            
+            <div class="top-image-texts">
+                <p><u>Organic Vegetables for a healthy life.</u></p>
+            </div>    
             </a>
         </div>
-        <div class="slide">
+       
+        <div  class="slide">
             <a href="/products">
             <img src="static/goats.jpg" alt="Goats">
-            <div class="caption">Premium Meat and Fish products.</div>
+            <div class="top-image-texts">
+                <p><u>Premium Meat and Fish products.</u>
+                </p>
+            </div>
+            
+            
             </a>
         </div>
         <div class="slide">
             <a href="/products">
                 <img src="static/Cocks+Hens.jpg" alt="Cocks">
-            <div class="caption">Premium Meat and Fish products.</div>
+                <div class="top-image-texts">
+                    <p><u>Premium Meat and Fish products.</u></p>
+                </div>
             </a>
         </div>
         <div class="slide">
             <a href="/products">
             <img src="static/fish.jpg" alt="Meat and Fish">
-            <div class="caption">Premium Meat and Fish products.</div>
+            <div class="top-image-texts">
+                <p><u>Premium Meat and Fish products.</u></p>
+            </div>
             </a>
         </div>
         <div class="slide">
             <a href="/fruits">
                 <img src="static/mangoes.jpg" alt="Mangoes">
-            <div class="caption">Sweet and juicy Mangoes.</div>
+                <div class="top-image-texts">
+                    <p><u>Sweet and juicy Mangoes.</u></p>
+                </div>
             </a>
         </div>
         <div class="slide">
             <a href="/products">
                 <img src="static/dry chillies.jpg" alt="Dry Chillies">
-            <div class="caption">High-quality Dry Chillies for spice lovers.</div>
+            <div class="top-image-texts"><p><u>High-quality Dry Chillies for spice lovers.</u></p></div>
             </a>
         </div>
         <div class="slide">
             <a href="/products">
                 <img src="static/Rice.jpg" alt="Rice">
-            <div class="caption">High-quality Rice.</div>
+            <div class="top-image-texts"><p><u>High-quality Rice.</u></p></div>
             </a>
         </div>
     </div>
     <section>
+        <div class="content">
+            <div class="section-text">
+                <h2 style="text-align: center;">ABOUT US</h2>
+                <p>NaticlaExims is dedicated to establishing itself as a prominent player in the import and export business. We offer a reliable platform that connects exporters and importers, facilitating the smooth supply of high-quality products across both domestic and international markets. Our mission is to provide genuine services to businesses that are focused on the global movement of commodities, ensuring a seamless experience for all stakeholders involved.</p>
+            </div>
+            <div class="second-section">
+                <p>At NaticlaExims, we work closely with producers, farmers, wholesalers, and importers to foster strong relationships and create a significant global footprint in international trade. Our primary goal is to bridge the gap between buyers and sellers in the foreign market, providing an efficient and transparent process. With a commitment to delivering top-notch products, ensuring customer satisfaction, and building lasting relationships, we strive to offer exceptional services, backed by our team of skilled consultants who are ready to assist at every step.</p>
+                
+                <img src="/static/international_trade.jpeg" alt="About Us Image">
+                </div>
+                </div>
         <h2>Our Key Services</h2>
         <div class="services">
             <div class="service">
@@ -111,28 +167,28 @@
                 <img src="static/Fruits.jpg" alt="Fruits">
                 <h3>Fresh Fruits</h3>
                 <div class="product-details">
-                    <p>Premium quality fruits sourced globally.</p>
+                    <p style="text-align: center;">Premium quality fruits sourced globally.</p>
                 </div>
             </div>
             <div class="product">
                 <img src="static/vegetables.jpg" alt="Vegetables">
                 <h3>Organic Vegetables</h3>
                 <div class="product-details">
-                    <p>Fresh and healthy organic vegetables.</p>
+                    <p style="text-align: center;">Fresh and healthy organic vegetables.</p>
                 </div>
             </div>
             <div class="product">
                 <img src="static/goats.jpg" alt="Meat">
                 <h3>Meat Products</h3>
                 <div class="product-details">
-                    <p>High-quality meat for all your needs.</p>
+                    <p style="text-align: center;">High-quality meat for all your needs.</p>
                 </div>
             </div>
             <div class="product">
                 <img src="static/dry chillies.jpg" alt="Spices">
                 <h3>Exotic Spices</h3>
                 <div class="product-details">
-                    <p>Aromatic spices to enhance your dishes.</p>
+                    <p style="text-align: center;">Aromatic spices to enhance your dishes.</p>
                 </div>
             </div>
         </div>
@@ -144,41 +200,120 @@
                 <img src="static/bananas.jpg" alt="Bananas">
                 <h3>Bananas</h3>
                 <div class="product-details">
-                    <p>Fresh and high-quality bananas for export.</p>
+                    <p style="text-align: center;">Fresh and high-quality bananas for export.</p>
                 </div>
             </div>
             <div class="product">
                 <img src="static/Mangoes.jpg" alt="Mangoes">
                 <h3>Mangoes</h3>
                 <div class="product-details">
-                    <p>Sweet and juicy mangoes sourced from the best farms.</p>
+                    <p style="text-align: center;">Sweet and juicy mangoes sourced from the best farms.</p>
                 </div>
             </div>
             <div class="product">
                 <img src="static/dry chillies.jpg" alt="Dry Chillies">
                 <h3>Dry Chillies</h3>
                 <div class="product-details">
-                    <p>Spicy and aromatic dry chillies for global markets.</p>
+                    <p style="text-align: center;">Spicy and aromatic dry chillies for global markets.</p>
                 </div>
             </div>
             <div class="product">
                 <img src="static/Rice.jpg" alt="Rice">
                 <h3>Rice</h3>
                 <div class="product-details">
-                    <p>Premium quality rice, perfect for all cuisines.</p>
+                    <p style="text-align: center;">Premium quality rice, perfect for all cuisines.</p>
                 </div>
             </div>
-            <div class="product">
-                <img src="static/tomatoes.jpg" alt="Tomatoes">
-                <h3>Tomatoes</h3>
-                <div class="product-details">
-                    <p>Fresh and ripe tomatoes for export.</p>
-                </div>
-            </div>
+            
         </div>
     </section>
-    <footer>
-        <p>&copy; 2025 Naticalexims. All rights reserved.</p>
-    </footer>
+    <div class="marquee-container">
+        <div class="marquee">
+            <img src="/static/Apples.jpg">
+            <img src="/static/bananas.jpg">
+            <img src="/static/Grapes.jpg">
+            <img src="/static/Mango.jpg">
+            <img src="/static/Fruits.jpg">
+            <img src="/static/Pomengranates.jpg">
+            <img src="/static/Watermelons.jpg">
+            <img src="/static/Apples.jpg">
+            <img src="/static/bananas.jpg">
+            <img src="/static/Grapes.jpg">
+            <img src="/static/Mango.jpg">
+            <img src="/static/Fruits.jpg">
+            <img src="/static/Pomengranates.jpg">
+            <img src="/static/Watermelons.jpg">
+            <img src="/static/Apples.jpg" >
+            <img src="/static/bananas.jpg">
+            <img src="/static/Grapes.jpg">
+        </div>
+    </div>
+    <br><br>
+    <div class="marquee-container">
+        <div class="marquee">
+           
+            <img src="/static/tomatoes.jpg">
+            <img src="/static/chillies.jpg">
+            <img src="/static/ladies finger.jpg">
+            <img src="/static/Carrots.jpg">
+            <img src="/static/vegetables.jpg">
+            <img src="/static/onions.jpg">
+            <img src="/static/dry chillies.jpg">
+            <img src="/static/tomatoes.jpg">
+            <img src="/static/chillies.jpg">
+            <img src="/static/ladies finger.jpg">
+            <img src="/static/Carrots.jpg">
+            <img src="/static/vegetables.jpg">
+            <img src="/static/onions.jpg">
+            <img src="/static/dry chillies.jpg">
+            <img src="/static/tomatoes.jpg">
+            <img src="/static/chillies.jpg">
+            <img src="/static/ladies finger.jpg">
+        </div>
+    </div>
+    <br>
+    <br>
+        <footer>
+            <div class="footer-container">
+                
+                <div class="footer-left">
+                    <img  src="static/logo.jpg" alt="NaticalExims Logo">
+                    
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61572382533702"><img src="static/facebook.jpg" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/natical_exims/"><img src="static/instagram.jpg" alt="Instagram"></a>
+                        <a href="https://www.linkedin.com/in/natical-exims-821a19348/"><img src="static/twitter.jpg" alt="Twitter"></a>
+                        <a href="https://x.com/EximsNatic68780"><img src="static/linkedin.jpg" alt="Linked In"></a>
+                    </div>
+                    <p class="social-icons"><img src="static/email.jpg" class="icon"> naticalexims@gmail.com</p>
+                    <p class="social-icons"><img src="static/phone.jpg" class="icon"> +91-96408 22289</p>
+                </div>
+        
+                <!-- Middle Section: Useful Links -->
+                <div class="footer-links">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="vegetables.html">Vegetables</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Right Section: Contact Information -->
+                <div class="footer-right">
+                    <h3>Contact Information</h3>
+                    <p>🇮🇳 <strong>NaticalExims</strong></p>
+                    <p>D.No. 6-5-989, Lakshmi Kala building, Srinagar Colony, near Saveera Hospital, Anantapurclear-515001</p>
+                    
+                    
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© NaticalExims 2024. ALL RIGHTS RESERVED. Design and Developed by <a href="#">NaticalExims</a></p>
+            </div>
+        </footer>
 </body>
 </html>
