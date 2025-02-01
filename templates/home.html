@@ -50,6 +50,21 @@
             showSlide(currentSlide);
         }
         setInterval(nextSlide, 2000);
+
+        window.addEventListener('DOMContentLoaded', (event) => {
+            setTimeout(() => {
+                document.getElementById("popup-container").style.display = "flex";
+            }, 7000);
+
+            document.getElementById("close-popup").addEventListener('click', () => {
+                document.getElementById("popup-container").style.display = "none";
+            });
+
+            document.getElementById("popup-icon").addEventListener('click', () => {
+                window.location.href = "/contact"; // Or your contact page URL
+            });
+        });
+    
     </script>
 </head>
 <body>
@@ -64,9 +79,19 @@
         <a href="/contact">Contact</a>
     </nav>
     <section>
-        <h2>Welcome to Naticalexims</h2>
-        <p class="intro">We are a premier import and export company, dedicated to connecting businesses with global markets. Our expertise lies in delivering seamless trade solutions tailored to your unique needs. Discover how we can empower your business to reach new heights.</p>
+    <div class="content">
+        <div class="section-text">
+            <h2 style="text-align: center;">Welcome to Naticalexims</h2>
+            <p>We are a premier import and export company committed to bridging the gap between businesses and global markets. With a deep understanding of international trade dynamics, we provide comprehensive, end-to-end solutions that streamline the import and export process. Our expertise spans multiple industries, ensuring that we cater to diverse business needs with efficiency and precision.</p>
+            <p>At the core of our operations lies a commitment to excellence, reliability, and compliance with global trade regulations. We leverage our extensive network, industry insights, and logistical expertise to facilitate smooth transactions, minimize risks, and optimize supply chains. Whether you are looking to expand your reach, source high-quality products, or navigate complex trade requirements, our team is dedicated to providing customized solutions that align with your strategic goals.</p>
+            <p>Discover how our tailored trade solutions can empower your business, enhance operational efficiency, and unlock new growth opportunities in the international marketplace. Partner with us and take your business to new heights!</p>
+        </div>   
+        </div>
     </section>
+    <div class="popup-container" id="popup-container">
+        <button id="close-popup">&times;</button>
+        <button id="popup-icon">📩 Contact Us</button>
+    </div>
     <div class="slideshow-container">
         <div class="slide active">
             <a href="/fruits">
@@ -129,7 +154,7 @@
         </div>
         <div class="slide">
             <a href="/products">
-                <img src="static/Rice.jpg" alt="Rice">
+                <img src="static/Rice.jpeg" alt="Rice">
             <div class="top-image-texts"><p><u>High-quality Rice.</u></p></div>
             </a>
         </div>
@@ -163,19 +188,24 @@
     <section>
         <h2>Our Products</h2>
         <div class="products-container">
+            
             <div class="product">
+                <a href="/fruits" style="text-decoration: none; color: inherit;">
                 <img src="static/Fruits.jpg" alt="Fruits">
                 <h3>Fresh Fruits</h3>
                 <div class="product-details">
                     <p style="text-align: center;">Premium quality fruits sourced globally.</p>
                 </div>
+                </a>
             </div>
             <div class="product">
+                <a href="/fmg" style="text-decoration: none; color: inherit;">
                 <img src="static/vegetables.jpg" alt="Vegetables">
                 <h3>Organic Vegetables</h3>
                 <div class="product-details">
                     <p style="text-align: center;">Fresh and healthy organic vegetables.</p>
                 </div>
+                </a>
             </div>
             <div class="product">
                 <img src="static/goats.jpg" alt="Meat">
@@ -184,17 +214,20 @@
                     <p style="text-align: center;">High-quality meat for all your needs.</p>
                 </div>
             </div>
-            <div class="product">
-                <img src="static/dry chillies.jpg" alt="Spices">
-                <h3>Exotic Spices</h3>
-                <div class="product-details">
-                    <p style="text-align: center;">Aromatic spices to enhance your dishes.</p>
-                </div>
+            <div class="product" id="fastmovinggoods">
+                <a href="/fmg" style="text-decoration: none; color: inherit;">
+                    <img src="static/FMG_Products.jpeg" alt="Click on!">
+                    <h3>FMCG Products</h3>
+                    <div class="product-details">
+                        <p style="text-align: center;">Fast-moving consumer goods</p>
+                    </div>
+                </a>
             </div>
         </div>
+        <button><a style="text-decoration: none; "href="/products" class="product-btn">View More Products</a></button>
     </section>
     <section>
-        <h2>Top Exports</h2>
+        <h2>Our Top Exports</h2>
         <div class="products-container">
             <div class="product">
                 <img src="static/bananas.jpg" alt="Bananas">
@@ -218,7 +251,7 @@
                 </div>
             </div>
             <div class="product">
-                <img src="static/Rice.jpg" alt="Rice">
+                <img src="static/Rice.jpeg" alt="Rice">
                 <h3>Rice</h3>
                 <div class="product-details">
                     <p style="text-align: center;">Premium quality rice, perfect for all cuisines.</p>
@@ -227,6 +260,7 @@
             
         </div>
     </section>
+   
     <div class="marquee-container">
         <div class="marquee">
             <img src="/static/Apples.jpg">
@@ -273,31 +307,56 @@
     </div>
     <br>
     <br>
+    <div class="marquee-container">
+        <div class="marquee">
+           
+            <img src="/static/Rice.jpeg">
+            <img src="/static/Chilli_powder.jpg">
+            <img src="/static/turmeric_powder.jpg">
+            <img src="/static/Wheat.jpeg">
+            <img src="/static/Sugar.jpeg">
+            <img src="/static/Peanuts.jpeg">
+            <img src="/static/Rice.jpeg">
+            <img src="/static/Chilli_powder.jpg">
+            <img src="/static/turmeric_powder.jpg">
+            <img src="/static/Wheat.jpeg">
+            <img src="/static/Sugar.jpeg">
+            <img src="/static/Peanuts.jpeg">
+            <img src="/static/Rice.jpeg">
+            <img src="/static/Chilli_powder.jpg">
+            <img src="/static/turmeric_powder.jpg">
+            <img src="/static/Wheat.jpeg">
+            <img src="/static/Sugar.jpeg">
+            <img src="/static/Peanuts.jpeg">
+        </div>
+    </div>
+    <br>
+    <br>
         <footer>
             <div class="footer-container">
                 
                 <div class="footer-left">
-                    <img  src="static/logo.jpg" alt="NaticalExims Logo">
+                    <img style="border-radius: 0%;" src="static/logo.jpg" alt="NaticalExims Logo">
                     
                     <div class="social-icons">
-                        <a href="https://www.facebook.com/profile.php?id=61572382533702"><img src="static/facebook.jpg" alt="Facebook"></a>
-                        <a href="https://www.instagram.com/natical_exims/"><img src="static/instagram.jpg" alt="Instagram"></a>
-                        <a href="https://www.linkedin.com/in/natical-exims-821a19348/"><img src="static/twitter.jpg" alt="Twitter"></a>
-                        <a href="https://x.com/EximsNatic68780"><img src="static/linkedin.jpg" alt="Linked In"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61572382533702"><img src="static/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/natical_exims/"><img src="static/instagram.jpeg" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/in/natical-exims-821a19348/"><img src="static/twitter.png" alt="Twitter"></a>
+                    <a href="https://x.com/EximsNatic68780"><img src="static/linkedin.png" alt="Linked In"></a>
                     </div>
-                    <p class="social-icons"><img src="static/email.jpg" class="icon"> naticalexims@gmail.com</p>
-                    <p class="social-icons"><img src="static/phone.jpg" class="icon"> +91-96408 22289</p>
+                    <p class="social-icons"><img src="static/email.png" class="icon"> naticalexims@gmail.com</p>
+                    <p class="social-icons"><img src="static/phone.png" class="icon"> +91-96408 22289</p>
                 </div>
         
                 <!-- Middle Section: Useful Links -->
                 <div class="footer-links">
                     <h3>Useful Links</h3>
                     <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="vegetables.html">Vegetables</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/products">Products</a></li>
+                        <li><a href="/vegetables">Vegetables</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
                     </ul>
                 </div>
         
@@ -312,7 +371,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>© NaticalExims 2024. ALL RIGHTS RESERVED. Design and Developed by <a href="#">NaticalExims</a></p>
+                <p>© NaticalExims 2024. ALL RIGHTS RESERVED. Design and Developed by <a href="/home">NaticalExims</a></p>
             </div>
         </footer>
 </body>
