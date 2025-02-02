@@ -1,19 +1,14 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    
-
     margin: 0;
     padding: 0;
     color: #2c3e50;
     background-color: #f4f8fb;
     background-image: url('https://www.transparenttextures.com/patterns/white-diamond.png');
-}
-body {
     animation: flow 15s ease infinite;
 }
-body::-webkit-scrollbar {
-    display: none;
-}
+
+
 @keyframes flow {
     0% {
         background-position: 100% 50%;
@@ -76,10 +71,12 @@ section h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 40px;
     color: #2a5298;
+    text-align: center;
 }
 /*Introduction Styling*/
 
 .intro {
+    margin-left: 40px;
     max-width: 800px;
     margin: auto;
     font-size: 1.2rem;
@@ -465,55 +462,14 @@ footer {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     text-align: justify;
-    padding: 0 20px;
-    margin-left: 60px;
+    padding: 0 10px;
+    margin-left: 40px;
     line-height: 1.8; 
 }
 
-.second-section {
-    display: flex;
-    justify-content: space-between;
-    
-    width: 100%;
-    margin-top: 20px;
-    padding: 0 20px; 
-    
-}
 
-.second-section p {
-    flex: 1;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    text-align: justify;
-    margin-right: 150px;
-    margin-left: 60px;
-    line-height: 1.6;
-}
 
-.second-section img {
-    width: 450px;
-    height:250px;
-    border-radius: 8px;
-    margin-left: 20px;
-    margin-top: 25px;
-}
-/*Mobile specific*/
-@media (max-width: 768px) {
-    .second-section {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center;
-        text-align: center;
-    }
 
-    .second-section p {
-        font-size: 16px;
-        padding: 10px;
-    }
-
-    .second-section img {
-        max-width: 80%;
-    }
-}
 
 .popup-container {
     position: fixed;
@@ -612,3 +568,5 @@ button {
 button:hover {
     background-color: #2a5298;
 }
+
+
