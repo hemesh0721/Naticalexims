@@ -8,12 +8,19 @@ from google.auth.transport.requests import Request
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import base64
+from dotenv import load_dotenv  # If you're using .env
+
+load_dotenv()
 
 app = Flask(__name__)
 
 SCOPES = ['https://www.googleapis.com/auth/gmail.send']
 
 def send_email_oauth(sender_email, recipient_email, subject, body):
+    client_id = os.environ.get("GOOGLE_CLIENT_ID")
+    client_secret = os.environ.get("GOOGLE_CLIENT_SECRET")
+    if not client_id or not client_secret:
+        raise ValueError("Google credentials not found in environment variables.")
     creds = None
     if os.path.exists('token.pickle'):
         with open('token.pickle', 'rb') as token:
@@ -105,7 +112,7 @@ def addContact():
         conn.commit()
         conn.close()
 
-        sender_email = os.environ.get("SENDER_EMAIL")
+        sender_email = os.environ.get("GOOGLE_CLIENT_ID")
         if not sender_email:
             raise ValueError("Sender email not found in environment variable SENDER_EMAIL")
 
