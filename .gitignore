@@ -3,4 +3,5 @@ token.pickle
 __pycache__/
 *.pyc
 .env 
-venv/ 
+venv/ credentials.json
+.env
