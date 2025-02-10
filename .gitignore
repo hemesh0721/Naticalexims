@@ -1,4 +1,6 @@
 credentials.json
 token.pickle
-__pycache__/ 
-*.pyc 
+__pycache__/
+*.pyc
+.env  # If you use a .env file
+venv/ # If you have a virtual environment
