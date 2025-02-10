@@ -239,11 +239,16 @@ section h2 {
 /*Footer Styling*/
 
 footer {
+    width: 100%;
+    max-width: 100%;
     background-color: #1A2B5D;
     color: #ffffff;
     padding: 40px 0;
     font-family: Arial, sans-serif;
+   
 }
+
+
 
 .footer-container {
     display: flex;
