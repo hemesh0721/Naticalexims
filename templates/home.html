@@ -7,31 +7,54 @@
     <link rel="Stylesheet" href="static/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        .marquee-container {
-        width: 100%;
-        overflow: hidden;
-        
-    }
+    .marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
 
-    .marquee {
-        display: flex;
-        animation: marquee-scroll 10s linear infinite;
-    }
+/* Common styles for all marquees */
+.marquee {
+    display: flex;
+    width: 200%; /* Ensures continuous looping */
+}
 
-    .marquee img {
-        height: 150px;
-        margin-right: 20px;
-        
-    }
+.marquee img {
+    height: 150px;
+    margin-right: 20px;
+}
 
-    @keyframes marquee-scroll {
-        0% {
-            transform: translateX(0%);
-        }
-        100% {
-            transform: translateX(-50%);
-        }
+/* Left-moving marquees */
+.left-marquee {
+    animation: marquee-left 10s linear infinite;
+}
+
+/* Right-moving marquee */
+.right-marquee {
+    animation: marquee-right 10s linear infinite;
+}
+
+/* Keyframes for Left-moving animation */
+@keyframes marquee-left {
+    0% {
+        transform: translateX(0%);
     }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Keyframes for Right-moving animation */
+@keyframes marquee-right {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
     </style>
     <script>
         let currentSlide = 0;
@@ -70,10 +93,13 @@
 <body>
     
     <nav>
+        <a href="/home"><img src="static/JPEG.jpg" class="logo"></a>
+        <div class="menu">
         <a href="/home">Home</a>
         <a href="/products">Products</a>
         <a href="/about">About Us</a>
         <a href="/contact">Contact</a>
+    </div>
     </nav>
     <section>
     <div class="content">
@@ -257,7 +283,7 @@
     </section>
    
     <div class="marquee-container">
-        <div class="marquee">
+        <div class="marquee left-marquee"> 
             <img src="/static/Apples.jpg">
             <img src="/static/bananas.jpg">
             <img src="/static/Grapes.jpg">
@@ -279,8 +305,7 @@
     </div>
     <br><br>
     <div class="marquee-container">
-        <div class="marquee">
-           
+        <div class="marquee right-marquee">
             <img src="/static/tomatoes.jpg">
             <img src="/static/chillies.jpg">
             <img src="/static/ladies finger.jpg">
@@ -303,8 +328,7 @@
     <br>
     <br>
     <div class="marquee-container">
-        <div class="marquee">
-           
+        <div class="marquee left-marquee">
             <img src="/static/Rice.jpeg">
             <img src="/static/Chilli_powder.jpg">
             <img src="/static/turmeric_powder.jpg">
@@ -331,7 +355,7 @@
         <div class="footer-container">
             
             <div class="footer-left">
-                <img style="border-radius: 0%;" src="static/logo.jpg" alt="NaticalExims Logo">
+                <img style="border-radius: 0%;" src="static/JPEG.jpg" alt="NaticalExims Logo">
                 <div class="social-icons">
                     <a href="https://www.facebook.com/profile.php?id=61572382533702"><img src="static/facebook.png" alt="Facebook"></a>
                     <a href="https://www.instagram.com/natical_exims/"><img src="static/instagram.jpeg" alt="Instagram"></a>
@@ -365,7 +389,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>© NaticalExims 2024. ALL RIGHTS RESERVED. Design and Developed by <a href="home.html">NaticalExims</a></p>
+            <p>© NaticalExims 2024. ALL RIGHTS RESERVED. Design and Developed by <a href="home.html" style="text-decoration: none;">NaticalExims</a></p>
         </div>
     </footer>
 </body>
