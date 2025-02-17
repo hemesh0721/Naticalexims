@@ -74,7 +74,7 @@ body {
     flex-wrap: wrap;
 }
 .content{
-    width:47%;
+    width: fit-content;
 }
 h2 {
     font-family: 'Open Sans', sans-serif;
@@ -103,7 +103,7 @@ section h2 {
 /*Slideshow Styling*/
 
 .slideshow-container {
-    width:47%;
+    width: fit-content;
     margin-top: 5%;
     margin-left: 1%;
     height: 450px;
@@ -531,7 +531,6 @@ footer {
 
 /*Home page About Us-*/
 .section-text {
-    
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
@@ -541,9 +540,19 @@ footer {
     line-height: 1.8; 
 }
 
+.section-texts {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    padding: 0 10px;
+    margin-left: 40px;
+    line-height: 1.8; 
+}
 
-
-
+.section-texts p{
+    margin-right: 40px;
+}
 
 .popup-container {
     position: fixed;
