@@ -74,7 +74,7 @@ body {
     flex-wrap: wrap;
 }
 .content{
-    width:700px;
+    width:100%;
 }
 h2 {
     font-family: 'Open Sans', sans-serif;
@@ -103,9 +103,9 @@ section h2 {
 /*Slideshow Styling*/
 
 .slideshow-container {
-    width:700px;
-    margin-top: 5%;
-    margin-left: 2%;
+    width:60%;
+    margin-top: 2%;
+    margin-left: 20%;
     height: 450px;
     position: relative;
     overflow: hidden;
