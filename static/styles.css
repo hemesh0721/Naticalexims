@@ -74,7 +74,7 @@ body {
     flex-wrap: wrap;
 }
 .content{
-    width: fit-content;
+    width:700px;
 }
 h2 {
     font-family: 'Open Sans', sans-serif;
@@ -103,9 +103,9 @@ section h2 {
 /*Slideshow Styling*/
 
 .slideshow-container {
-    width: fit-content;
+    width:700px;
     margin-top: 5%;
-    margin-left: 1%;
+    margin-left: 2%;
     height: 450px;
     position: relative;
     overflow: hidden;
@@ -538,20 +538,6 @@ footer {
     padding: 0 10px;
     margin-left: 40px;
     line-height: 1.8; 
-}
-
-.section-texts {
-    width: 100%;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    text-align: justify;
-    padding: 0 10px;
-    margin-left: 40px;
-    line-height: 1.8; 
-}
-
-.section-texts p{
-    margin-right: 40px;
 }
 
 .popup-container {
