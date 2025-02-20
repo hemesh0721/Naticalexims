@@ -533,6 +533,18 @@ footer {
     line-height: 1.8; 
 }
 
+.section-textss {
+    display:flex;
+    flex-wrap: wrap; 
+    width: 95%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    padding: 0 10px;
+    margin-left: 40px;
+    line-height: 1.8; 
+}
+
 .popup-container {
     position: fixed;
     top: 50%;
