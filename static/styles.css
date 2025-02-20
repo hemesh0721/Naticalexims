@@ -522,6 +522,9 @@ footer {
 }
 
 /*Home page About Us-*/
+.section-text h2{
+    text-align: center;
+}
 .section-text, .section-texts {
     display:flex;
     flex-wrap: wrap;
