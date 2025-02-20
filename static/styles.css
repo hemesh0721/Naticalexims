@@ -523,8 +523,10 @@ footer {
 
 /*Home page About Us-*/
 .section-text, .section-texts {
+    display:flex;
+    flex-wrap: wrap;
     
-    width: 100%;
+    width: 95%;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     text-align: justify;
