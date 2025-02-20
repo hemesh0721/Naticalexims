@@ -88,7 +88,6 @@ section h2 {
 .contents {
     margin-left: 20px;
     max-width: 91%;
-    padding-top: 10px;
     font-size: 1.2rem;
 }
 
@@ -522,14 +521,10 @@ footer {
 }
 
 /*Home page About Us-*/
-.section-text h2{
-    text-align: center;
-}
 .section-text, .section-texts {
     display:flex;
-    flex-wrap: wrap;
-    
-    width: 95%;
+    flex-wrap: wrap; 
+    width: 100%;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     text-align: justify;
