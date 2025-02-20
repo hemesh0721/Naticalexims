@@ -49,7 +49,6 @@ body {
 }
 
 .menu a {
-    
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
@@ -68,18 +67,11 @@ body {
 }
 
 /*Section*/
-.top{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.content{
-    width:100%;
-}
+
+
 h2 {
     font-family: 'Open Sans', sans-serif;
     margin-top:30px;
-    margin-bottom: -3px;
     font-size: 40px;
     color: #2a5298;
     text-align: center;
@@ -103,10 +95,10 @@ section h2 {
 /*Slideshow Styling*/
 
 .slideshow-container {
-    width:60%;
-    margin-top: 2%;
-    margin-left: 20%;
-    height: 450px;
+    width:70%;
+    margin-top: 1%;
+    margin-left: 15%;
+    height: 500px;
     position: relative;
     overflow: hidden;
     border-radius: 10px;
@@ -525,12 +517,13 @@ footer {
 .content {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 5px;
     padding: 0 20px; 
 }
 
 /*Home page About Us-*/
-.section-text {
+.section-text, .section-texts {
+    
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
